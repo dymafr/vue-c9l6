@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { provide } from 'vue';
+import { provide, reactive } from 'vue';
 import Blog from './Blog.vue';
 
 export interface AuthorInterface {
@@ -11,12 +11,16 @@ export interface AuthorInterface {
   birthdate: number;
 }
 
-const author: AuthorInterface = {
+const author = reactive({
   name: 'Chateaubriand',
   birthdate: 1768,
-};
+});
 
-provide<AuthorInterface>('author', author);
+function updateBirthday() {
+  author.birthdate = 2000;
+}
+
+provide('author', readonly({author, updateBirthday});
 </script>
 
 <style scoped lang="scss"></style>

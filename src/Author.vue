@@ -6,7 +6,14 @@
 import { inject } from 'vue';
 import { AuthorInterface } from './App.vue';
 
-const author = inject<AuthorInterface>('author')!;
+const { author, updateBirthday } =
+  inject<Readonly<{ data: AuthorInterface; updateBirthday: () => void }>>(
+    'author'
+  )!;
+
+setTimeout(() => {
+  author.updateBirthday();
+});
 </script>
 
 <style scoped lang="scss"></style>
