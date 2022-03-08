@@ -20,7 +20,7 @@ function updateBirthday() {
   author.birthdate = 2000;
 }
 
-provide('author', readonly({author, updateBirthday});
+provide('author', readonly({ author, updateBirthday }));
 </script>
 
 <style scoped lang="scss"></style>
