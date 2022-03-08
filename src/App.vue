@@ -1,9 +1,10 @@
 <template>
   <Blog />
+  <input type="text" v-model="author.name" />
 </template>
 
 <script setup lang="ts">
-import { provide, reactive } from 'vue';
+import { provide, reactive, readonly } from 'vue';
 import Blog from './Blog.vue';
 
 export interface AuthorInterface {
