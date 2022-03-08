@@ -1,4 +1,8 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 
-createApp(App).mount('#app');
+const app = createApp(App);
+
+app.provide('API_URL', 'https://restapi.fr/api');
+
+app.mount('#app');
