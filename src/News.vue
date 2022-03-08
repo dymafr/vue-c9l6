@@ -1,9 +1,9 @@
 <template>
-  <Blog />
+  <Author />
 </template>
 
 <script setup lang="ts">
-import Blog from './Blog.vue';
+import Author from './Author.vue';
 </script>
 
 <style scoped lang="scss"></style>

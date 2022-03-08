@@ -1,9 +1,9 @@
 <template>
-  <Blog />
+  <News />
 </template>
 
 <script setup lang="ts">
-import Blog from './Blog.vue';
+import News from './News.vue';
 </script>
 
 <style scoped lang="scss"></style>
