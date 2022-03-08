@@ -1,6 +1,8 @@
 <template>
-  <Blog />
   <input type="text" v-model="author.name" />
+  <div>
+    <Blog />
+  </div>
 </template>
 
 <script setup lang="ts">

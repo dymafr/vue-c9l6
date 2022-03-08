@@ -1,5 +1,6 @@
 <template>
   <small> {{ author.name }} - {{ author.birthdate }}</small>
+  <p>{{ api }}</p>
 </template>
 
 <script setup lang="ts">
@@ -10,6 +11,7 @@ const { author, updateBirthday } =
   inject<Readonly<{ data: AuthorInterface; updateBirthday: () => void }>>(
     'author'
   )!;
+const api = inject('API_URL');
 
 setTimeout(() => {
   author.updateBirthday();
