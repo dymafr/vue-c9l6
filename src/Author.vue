@@ -15,7 +15,7 @@ const api = inject('API_URL');
 
 setTimeout(() => {
   author.updateBirthday();
-});
+}, 5000);
 </script>
 
 <style scoped lang="scss"></style>
