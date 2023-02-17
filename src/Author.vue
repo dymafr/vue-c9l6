@@ -14,7 +14,7 @@ const { author, updateBirthday } =
 const api = inject('API_URL');
 
 setTimeout(() => {
-  author.updateBirthday();
+  updateBirthday();
 }, 5000);
 </script>
 
